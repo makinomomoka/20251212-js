@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.img-fadein {
+    opacity: 0;
+    translate: -50px 50px;
+    animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1020px;
+}
+
+.gallery-item {
+    opacity: 0;
+    width: 100%;
+    aspect-ratio: 4 / 3 ;
+    object-fit: cover;
+}
